@@ -1,4 +1,6 @@
 # Reinforcement-Learning-In-Tic-Tac-Toe-in-R
+By Qingyuan Jiang
+
 Q-learning
 Let two AIs compete each other
 
