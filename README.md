@@ -11,6 +11,9 @@ I'll upload my enviroment after training, you can run the play part after loadin
 
 Special thanks for my teammates who help me finish this project: Charles, Bob and Selva.
 
+This is the winning rate after training 5000 rows of data, near 98%. You could achieve a better result if more data was trained. But it will take much longer. 
+![alt text](https://github.com/gto0320/Reinforcement-Learning-In-Tic-Tac-Toe/blob/master/Picture4.png?raw=true)
+
 ### Two packages are used in this project, if you have not download package, use this code to download:
 
 I personally got some trouble when downloading "ReinforcementLearning", it might need some extra libraries to be downloaded before this package. Follow the error message in R then you will be fine.
@@ -32,6 +35,9 @@ Since i'm going to generate data by myself, I need to create a place to set stor
 For RL, we need four major attributes: state before action, action,state after action, reward
 RL will calculate the reward/points each step and the steps relate to this step. Choose the step with the highest score.
 State1-9 are the blocks on tic-tac-toe games. 
+
+This is how it looks like when finish generate all the data. Now it is blank:
+![alt text](https://github.com/gto0320/Reinforcement-Learning-In-Tic-Tac-Toe/blob/master/Picture1.png?raw=true)
 
 ```
 t1=data.frame(State1 = ".",
@@ -90,6 +96,8 @@ randomNumber=5
 ## Loop Start
 Add a timer if you want, because it will take more than 4 hours.
 I record the time for train every 1000 rows.
+
+![alt text](https://github.com/gto0320/Reinforcement-Learning-In-Tic-Tac-Toe/blob/master/Picture3.png?raw=true)
 
 ```
 start_time1 <- Sys.time()
@@ -365,10 +373,12 @@ for (rate in (1:7)) {
 ## Here are some equations could check your progres
 But you need to make some changes to use it. Like row numbers, and Q_hash part.
 
-For exaample: ....X... means 
+For example: ....X... means 
 ...
 .X.
 ...
+
+![alt text](https://github.com/gto0320/Reinforcement-Learning-In-Tic-Tac-Toe/blob/master/Picture2.png?raw=true)
 
 ```
 control <- list(alpha =0.5, gamma =0.5, epsilon =0.5)
